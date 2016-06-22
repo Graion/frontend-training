@@ -26,7 +26,7 @@
     <section class="code-example position-relative">
         <h3 class="css-property">position: relative;</h3>
         <p>
-            Estos elementos son posicionados relativos a su posición normal.
+            Estos elementos son posicionados <strong>relativos a su posición normal</strong>.
         </p>
         <p>
             Configurar las properties <span class="code">top, right, bottom, y left</span> de un elemento posicionado como relativo hará que el elemento se aleje de su posición normal.
@@ -34,8 +34,20 @@
         <div class="alert">
             <strong>Es mala práctica</strong> usar las properties <span class="code">top, right, bottom y left</span> en un elemento relativo ya que se puede terminar con efectos no deseados. En general se puede usar otra solución para lograr el mismo efecto, como combinar <span class="code">padding y margin</span>.
         </div>
-        <div class="css-element with-position">
+        <div class="css-element">
             Este elemento tiene <div class="css-property">position: relative;</div> con <div class="css-property">left: 40px;</div>
+        </div>
+    </section>
+    <section class="code-example position-fixed">
+        <h3 class="css-property">position: fixed;</h3>
+        <p>
+            Estos elementos son posicionados <strong>relativos al viewport</strong>, lo cual implica que va a quedarse en el mismo lugar incluso si la página es escroleada.
+        </p>
+        <p>
+            Un elemento <span class="code">fixed</span> <strong>no deja espacio</strong> donde normalmente hubiera estado posicionado (por eso no vemos el elemento abajo de este texto).
+        </p>
+        <div class="css-element">
+            Este elemento tiene <div class="css-property">position: fixed;</div> con <div class="css-property">bottom: 0; right: 0;</div>
         </div>
     </section>
 </body>
