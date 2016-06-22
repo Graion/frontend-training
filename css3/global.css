@@ -1,0 +1,17 @@
+* {
+    font-family: Helvetica;
+}
+
+.css-property {
+    background-color: beige;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    display: inline;
+    padding: 6px;
+}
+
+.css-element {
+    background-color: darkseagreen;
+    padding: 15px;
+}

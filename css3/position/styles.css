@@ -1,3 +1,6 @@
-* {
-    font-family: Helvetica;
+.position-static .css-element {
+    position: static;
+    /*top, right, bottom and right properties don't affect static*/
+    top: 15px;
+    left: 15px;
 }
