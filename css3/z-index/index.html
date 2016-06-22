@@ -25,16 +25,39 @@
             Solo se aplica sobre elementos "posicionados".
         </div>
     </div>
-    <section class="code-example z-index-auto">
+    <section class="code-example z-index z-index-auto">
         <h3 class="css-property">z-index: auto;</h3>
         <p>
-            Valor por defecto de <span class="code">z-index</span>.
+            Valor por defecto de <span class="code">z-index</span>. Este valor no genera un nuevo contexto de apilamiento (explicado más adelante).
         </p>
         <p>
-            Cuando todos los elementos tienen este valor, los elementos se van apilando en el eje z.
+            Cuando todos los elementos tienen este valor, los elementos se van apilando en el eje z por orden de creación.
         </p>
         <p>
             Por lo tanto, el último elemento creado será el que esté por encima del resto.
+        </p>
+        <div class="css-container-element">
+            <p>
+                Este elemento tiene <span class="css-property">position: relative;</span>
+            </p>
+            <div class="css-element absolute-1">
+                1) Primer elemento con <div class="css-property">postition: absolute;</div>
+            </div>
+            <div class="css-element absolute-2">
+                2) Segundo elemento con <div class="css-property">postition: absolute;</div>
+            </div>
+            <div class="css-element absolute-3">
+                3) Tercer elemento con <div class="css-property">postition: absolute;</div>
+            </div>
+        </div>
+    </section>
+    <section class="code-example z-index z-index-integer">
+        <h3 class="css-property">z-index: &lt;entero&gt;;</h3>
+        <p>
+            Cada elemento con un valor entero de <span class="code">z-index</span> establece un nuevo contexto de apilamiento.
+        </p>
+        <p>
+            Esto significa que los elementos hijos que definan su <span class="code">z-index</span> van a ser comparado con sus hermanos y no con elementos que estén fuera de su padre.
         </p>
         <div class="css-container-element">
             <p>
