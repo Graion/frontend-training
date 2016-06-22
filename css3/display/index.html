@@ -16,13 +16,13 @@
             La property <span class="code">display</span> determina cómo va a ser mostrado un elemento HTML.
         </p>
         <p>
-            Todos los elementos tienen un valor de <span class="code">display</span> por defecto. En la mayoría de los casos el valor de <span class="code">display</span> es <span class="code">block o inline</span>
+            Todos los elementos tienen un valor de <span class="code">display</span> por defecto. En la mayoría de los casos el valor de <span class="code">display</span> es <span class="code">block o inline</span>.
         </p>
     </div>
     <section class="code-example display-block">
         <h3 class="css-property">display: block;</h3>
         <p>
-            Un elemento <span class="code">block</span> siempre empieza en una nueva línea y ocupa todo el ancho disponible de su elemento padre.
+            Un elemento <span class="code">block</span> siempre empieza en una nueva línea y <strong>ocupa todo el ancho disponible de su elemento padre</strong>.
         </p>
         <p>
             Algunos elementos de tipo bloque son: <span class="code">div, h1-h6, p, form, header, footer, section</span>
@@ -30,6 +30,20 @@
         <div class="css-element">
             Este elemento tiene <div class="css-property">display: block;</div>
         </div>
+        <p>
+            Si el elemento padre ocupa mitad del ancho del <span class="code">body</span>, entonces sus hijos <span class="code">block</span> no podrán ocupar más que ese espacio.
+        </p>
+        <div class="css-container-element half-width">
+            <p>
+                Este elemento tiene <span class="css-property">width: 50%;</span>
+            </p>
+            <div class="css-element">
+                Este elemento tiene <div class="css-property">display: block;</div>
+            </div>
+            <div class="css-element half-width">
+                Este elemento tiene <div class="css-property">width: 50%;</div>
+            </div>
+        </div>
     </section>
 </body>
-</html>
+</ht

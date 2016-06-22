@@ -22,9 +22,7 @@
 
 .position-absolute .css-container-element {
     position: relative;
-    background-color: antiquewhite;
     height: 150px;
-    padding: 20px;
 }
 
 .position-absolute .css-element {
