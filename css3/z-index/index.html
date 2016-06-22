@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 - Position</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../global.css">
+</head>
+<body>
+    <header>
+        <h1>Frontend Training</h1>
+        <h2>CSS3 - Z-index</h2>
+    </header>
+    <div class="summary">
+        <p>
+            La propiedad z-index <strong>indica el z-order (orden en el eje z)</strong> de un elemento y sus descendientes.
+        </p>
+        <p>
+            Cuando varios elementos se superponen, z-order determina cuales cubren a otros.
+        </p>
+        <p>
+            Un elemento con mayor z-index generalmente cubre a otro menor.
+        </p>
+        <div class="alert">
+            Solo se aplica sobre elementos "posicionados".
+        </div>
+    </div>
+    <section class="code-example z-index-auto">
+        <h3 class="css-property">z-index: auto;</h3>
+        <p>
+            La caja no establece un nuevo contexto de apilamiento. El nivel de apilamiento de la caja generada es el mismo que el de la caja padre.
+        </p>
+        <div class="css-container-element">
+            <p>
+                Este elemento tiene <span class="css-property">position: relative;</span>
+            </p>
+            <div class="css-element absolute-1">
+                1) Primer elemento con <div class="css-property">postition: absolute;</div>
+            </div>
+            <div class="css-element absolute-2">
+                2) Segundo elemento con <div class="css-property">postition: absolute;</div>
+            </div>
+            <div class="css-element absolute-3">
+                3) Tercer elemento con <div class="css-property">postition: absolute;</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

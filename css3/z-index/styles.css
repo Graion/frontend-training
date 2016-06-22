@@ -1,0 +1,27 @@
+.z-index-auto .css-container-element {
+    position: relative;
+    height: 200px;
+}
+
+.z-index-auto .css-element {
+    height: 50px;
+    background-color: rgba(207, 228, 207, 0.8);
+}
+
+.z-index-auto .css-element.absolute-1 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.z-index-auto .css-element.absolute-2 {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.z-index-auto .css-element.absolute-3 {
+    position: absolute;
+    bottom: 80px;
+    left: 80px;
+}
