@@ -41,13 +41,31 @@
     <section class="code-example position-fixed">
         <h3 class="css-property">position: fixed;</h3>
         <p>
-            Estos elementos son posicionados <strong>relativos al viewport</strong>, lo cual implica que va a quedarse en el mismo lugar incluso si la página es escroleada.
+            Estos elementos son posicionados <strong>relativos al viewport</strong>, lo cual implica que va a quedarse en el mismo lugar incluso si la página es scrolleada.
         </p>
         <p>
             Un elemento <span class="code">fixed</span> <strong>no deja espacio</strong> donde normalmente hubiera estado posicionado (por eso no vemos el elemento abajo de este texto).
         </p>
         <div class="css-element">
             Este elemento tiene <div class="css-property">position: fixed;</div> con <div class="css-property">bottom: 0; right: 0;</div>
+        </div>
+    </section>
+    <section class="code-example position-absolute">
+        <h3 class="css-property">position: absolute;</h3>
+        <p>
+            Estos elementos son posicionados <strong>relativos a su padre posicionado más cercano</strong>.
+        </p>
+        <p>
+            Un elemento se dice "posicionado" cuando su posición es cualquiera menos la posición por defecto estática.
+        </p>
+        <div class="alert">
+            Si un elemento absoluto no tiene un padre posicionado, entonces se posiciona relativo al <span class="code">body</span> del documento y se mueve de acuerdo al scroll de la página.
+        </div>
+        <div class="css-container-element">
+            Este elemento tiene <div class="css-property">position: relative;</div>
+            <div class="css-element">
+                Este elemento tiene <div class="css-property">position: absolute;</div> con <div class="css-property">bottom: 20px; left: 20px;</div>
+            </div>
         </div>
     </section>
 </body>

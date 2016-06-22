@@ -1,6 +1,6 @@
 .position-static .css-element {
     position: static;
-    /*top, right, bottom and right properties don't affect static*/
+    /* top, right, bottom y right properties no afectan elementos estáticos */
     top: 20px;
     left: 20px;
 }
@@ -11,8 +11,25 @@
 }
 
 .position-fixed .css-element {
+    background-color: rgba(143,188,143,0.8);
     position: fixed;
     bottom: 0;
     right: 0;
+    width: 300px;
+    /* Esta property la vemos en detalle en otro ejemplo */
+    z-index: 1;
+}
+
+.position-absolute .css-container-element {
+    position: relative;
+    background-color: antiquewhite;
+    height: 150px;
+    padding: 20px;
+}
+
+.position-absolute .css-element {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
     width: 300px;
 }
