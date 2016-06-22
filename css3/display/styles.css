@@ -5,5 +5,8 @@
 .display-block  .css-container-element {
     display: block;
     width: 50%;
+}
 
+.display-inline .css-element {
+    display: inline;
 }
