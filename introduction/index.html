@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Frontend Training</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Frontend Training</h1>
+					<h3>1. HTML & CSS</h3>
+				</section>
+
+				<section>
+					<h2>HTML (HyperText Markup Language)</h2>
+					<p>
+						El HTML es un lenguaje de marcado (markup language) que sirve para darle estructura y contenido a una aplicación web.
+                    </p>
+                    <p>
+HTML no es un lenguaje de programación, ya que este no tiene funciones aritméticas o variables, digamos que no poseen lógica.
+Ejemplo P, IMG.
+                    </p>
+				</section>
+
+                <section>
+                    <h2>CSS (Cascading Style Sheets)</h2>
+                    <p>
+                        CSS permite separar el contenido de un documento de su presentación. 
+                    </p>
+                    <p>
+                        La presentación incluye aspectos como el diseño o disposición de los elementos HTML, colores y fuentes.
+                    </p>
+                    <img src="img/WithWithoutCSS.png">
+                </section>
+
+                <section>
+                    <h2>BROWSER</h2>
+                    <p>
+                        Tanto HTML como CSS son reproducidos por el navegador, por lo que no necesitamos levantar ningun tipo de servidor para poder trabajar con ellos.
+                    </p>
+                    <img src="img/Frontend.jpg">
+                </section>
+
+                <section>
+					<h2>Partes de un Tag HTML</h2>
+                    <img src="img/BasicTagStructure.png">
+				</section>
+                
+                <section>
+                    <h2>Escenario Básico</h2>
+                    <img src="img/BaseHTML.png">
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Conexión HTML-CSS</h2>
+                    </section>
+                    <section>
+                        <h2>Inline</h2>
+                        <p>Usando el atributo <b><i>style</i></b> dentro del tag. En este caso todo los estilos CSS son escritos dentro de este atributo</p>
+                        <img src="img/InlineStyles.png">
+                    </section>
+                    <section>
+                        <h2>ID</h2>
+                        <p>Se asocia el elemento con un <b><i>id</i></b> <u>único para ese tag</u>. Luego se definen los estilos que van a estar asociados a ese <b><i>id</i></b></p>
+                        <img src="img/IdStyles.png">
+                    </section>
+                    <section>
+                        <h2>Class</h2>
+                        <p>Es muy parecido al <b><i>id</i></b> solo que en este caso se útiliza el atributo <b><i>class</i></b>. Esta clase puede ser reutilizada las veces que se quiera en distintos elementos HTML</p>
+                        <img src="img/ClassStyles.png">
+                    </section>
+                    <section>
+                        <h2>Tag <i>style</i></h2>
+                        <p>Dentro de este tag se podrá escribir código CSS que será interpretado por el navegador para darle estilos a los tags HTML que contengan las clases o ids especificados. La utilización de tags <b><i>style</i></b> es considerada una <u>mala práctica</u></p>
+                        <img src="img/StyleTag.png">
+                    </section>
+                    <section>
+                        <h2>Tag <i>link</i></h2>
+                        <p>El tag <b><i>link</i></b> nos permitirá importar archivos css externos, pudiendo tener por separado el CSS del HTML. Este <u>buena práctica</u> reemplazaría al tag <b><i>style</i></b></p>
+                        <img src="img/ImportCSS.png">
+                        <img src="img/CSSFile.png">
+                    </section>
+				</section>
+            </div>
+        </div>
+        
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
