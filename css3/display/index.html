@@ -80,5 +80,33 @@
             </div>
         </div>
     </section>
+    <section class="code-example display-none">
+        <h3 class="css-property">display: none;</h3>
+        <p>
+            Comunmente usada con JavaScript para hacer <strong>toggle (ocultar/mostrar) de elementos</strong> sin tener que eliminar y recrearlos (costoso para el DOM).
+        </p>
+        <p>
+            También es común combinarlo con el estado <span class="code">:hover</span> de un elemento padre.
+        </p>
+        <div class="css-container-element">
+            <p>
+                <button type="button" class="toggle-element">Toggle Element</button>
+            </p>
+            <div class="css-element css-toggle-element">
+                Este elemento tiene <div class="css-property">display: block;</div>
+            </div>
+            <script>
+                (function () {
+                    var button = document.getElementsByClassName('toggle-element')[0];
+                    var element = document.getElementsByClassName('css-toggle-element')[0];
+                    var visible = true;
+                    button.onclick = function () {
+                        visible = !visible;
+                        element.style.display = visible ? 'block' : 'none';
+                    };
+                })();
+            </script>
+        </div>
+    </section>
 </body>
 </ht
