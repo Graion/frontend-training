@@ -10,3 +10,13 @@
 .display-inline .css-element {
     display: inline;
 }
+
+.display-inline-block .css-element {
+    display: inline-block;
+    width: 250px;
+    white-space: normal;
+}
+
+.display-inline-block .css-container-element {
+    white-space: nowrap;
+}

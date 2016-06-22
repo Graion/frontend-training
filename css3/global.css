@@ -28,6 +28,7 @@
 
 .code {
     font-family: Consolas;
+    display: inline;
 }
 
 .alert {
