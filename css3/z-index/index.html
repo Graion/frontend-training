@@ -54,7 +54,7 @@
     <section class="code-example z-index z-index-integer">
         <h3 class="css-property">z-index: &lt;entero&gt;;</h3>
         <p>
-            Cada elemento con un valor entero de <span class="code">z-index</span> establece un nuevo contexto de apilamiento.
+            Cada elemento con un valor entero de <span class="code">z-index</span> establece un nuevo <strong>contexto de apilamiento</strong>.
         </p>
         <p>
             Esto significa que los elementos hijos que definan su <span class="code">z-index</span> van a ser comparado con sus hermanos y no con elementos que estén fuera de su padre.
@@ -71,6 +71,32 @@
             </div>
             <div class="css-element absolute-3">
                 3) Tercer elemento con <div class="css-property">postition: absolute;</div>
+            </div>
+        </div>
+    </section>
+    <section class="code-example z-index best-practices">
+        <h3 class="css-property">Best Practices</h3>
+        <p>
+            Una buena práctica es crear una <strong>clase CSS por cada capa</strong> que haya en la aplicación y asignarle un valor de <span class="code">z-index</span>.
+        </p>
+        <p>
+            Luego se asigna la clase a los elementos que se ubiquen en dicha capa.
+        </p>
+        <p>
+            Ejemplos de capas pueden ser: <span class="code">.modal, .sidenav, .popover</span>
+        </p>
+        <div class="css-container-element">
+            <p>
+                Este elemento tiene <span class="css-property">position: relative;</span>
+            </p>
+            <div class="css-element absolute-1 sidenav">
+                Sidenav
+            </div>
+            <div class="css-element absolute-2 popover">
+                Popover
+            </div>
+            <div class="css-element absolute-3 modal">
+                Modal
             </div>
         </div>
     </section>

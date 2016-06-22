@@ -44,3 +44,15 @@
 .z-index-integer .absolute-3 {
     z-index: 1;
 }
+
+.best-practices .sidenav {
+    z-index: 100;
+}
+
+.best-practices .popover {
+    z-index: 200;
+}
+
+.best-practices .modal {
+    z-index: 300;
+}
