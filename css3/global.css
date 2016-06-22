@@ -9,6 +9,7 @@
     border-radius: 4px;
     display: inline;
     padding: 4px;
+    font-family: Consolas;
 }
 
 .css-element {
@@ -18,4 +19,18 @@
 
 .code-example {
     margin: 30px 0;
+}
+
+.code {
+    font-family: Consolas;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
 }

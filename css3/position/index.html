@@ -17,10 +17,25 @@
             Los elementos HTML son posicionados <strong>estáticos por defecto</strong>.
         </p>
         <p>
-            Los elementos posicionados como estáticos <strong>no son afectados</strong> por las properties <span class="css-property">top, bottom, left, y right</span>.
+            Los elementos posicionados como estáticos <strong>no son afectados</strong> por las properties <span class="code">top, bottom, left, y right</span>.
         </p>
         <div class="css-element">
             Este elemento tiene <div class="css-property">position: static;</div>
+        </div>
+    </section>
+    <section class="code-example position-relative">
+        <h3 class="css-property">position: relative;</h3>
+        <p>
+            Estos elementos son posicionados relativos a su posición normal.
+        </p>
+        <p>
+            Configurar las properties <span class="code">top, right, bottom, y left</span> de un elemento posicionado como relativo hará que el elemento se aleje de su posición normal.
+        </p>
+        <div class="alert">
+            <strong>Es mala práctica</strong> usar las properties <span class="code">top, right, bottom y left</span> en un elemento relativo ya que se puede terminar con efectos no deseados. En general se puede usar otra solución para lograr el mismo efecto, como combinar <span class="code">padding y margin</span>.
+        </div>
+        <div class="css-element with-position">
+            Este elemento tiene <div class="css-property">position: relative;</div> con <div class="css-property">left: 40px;</div>
         </div>
     </section>
 </body>
