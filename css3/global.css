@@ -2,6 +2,14 @@
     font-family: Helvetica, sans-serif;
 }
 
+body {
+    margin: 0 20px;
+}
+
+h3.css-property {
+    margin-left: -4px;
+}
+
 .css-property {
     background-color: beige;
     -webkit-border-radius: 4px;
