@@ -45,6 +45,25 @@
     z-index: 1;
 }
 
+.z-index-integer .outer .css-container-element {
+    z-index: 0;
+}
+
+.z-index-integer .css-container-element.outer {
+    height: inherit;
+}
+
+.z-index-integer .css-element.outer {
+    position: absolute;
+    background-color: #faa6ff;
+    padding: 30px;
+    height: inherit;
+    width: 250px;
+    top: 130px;
+    left: 0;
+    z-index: 2;
+}
+
 .best-practices .sidenav {
     z-index: 100;
 }

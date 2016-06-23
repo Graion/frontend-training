@@ -13,25 +13,25 @@
     </header>
     <div class="summary">
         <p>
-            La propiedad z-index <strong>indica el z-order (orden en el eje z)</strong> de un elemento y sus descendientes.
+            La propiedad z-index <strong>indica el z-order (orden de apilamiento)</strong> de un elemento y sus descendientes.
         </p>
         <p>
-            Cuando varios elementos se superponen, z-order determina cuales cubren a otros.
+            Cuando varios elementos se superponen, el z-index determina cuales cubren a otros.
         </p>
         <p>
-            Un elemento con mayor z-index generalmente cubre a otro menor.
+            Un elemento con mayor z-index cubre a otro menor, siempre que estén en el mismo <strong>contexto de apilamiento</strong>.
         </p>
         <div class="alert">
-            Solo se aplica sobre elementos "posicionados".
+            Solo se aplica sobre elementos <strong>posicionados</strong>: <div class="code">relative, fixed o absolute</div>.
         </div>
     </div>
     <section class="code-example z-index z-index-auto">
         <h3 class="css-property">z-index: auto;</h3>
         <p>
-            Valor por defecto de <span class="code">z-index</span>. Este valor no genera un nuevo contexto de apilamiento (explicado más adelante).
+            Valor por defecto de <span class="code">z-index</span>.
         </p>
         <p>
-            Cuando todos los elementos tienen este valor, los elementos se van apilando en el eje z por orden de creación.
+            Cuando todos los elementos tienen este valor, los elementos <strong>se van apilando en el eje z por orden de creación</strong>.
         </p>
         <p>
             Por lo tanto, el último elemento creado será el que esté por encima del resto.
@@ -56,21 +56,40 @@
         <p>
             Cada elemento con un valor entero de <span class="code">z-index</span> establece un nuevo <strong>contexto de apilamiento</strong>.
         </p>
-        <p>
-            Esto significa que los elementos hijos que definan su <span class="code">z-index</span> van a ser comparado con sus hermanos y no con elementos que estén fuera de su padre.
-        </p>
         <div class="css-container-element">
             <p>
                 Este elemento tiene <span class="css-property">position: relative;</span>
             </p>
             <div class="css-element absolute-1">
-                1) Primer elemento con <div class="css-property">postition: absolute;</div>
+                1) Primer elemento con <div class="css-property">postition: absolute; z-index: 1;</div>
             </div>
             <div class="css-element absolute-2">
-                2) Segundo elemento con <div class="css-property">postition: absolute;</div>
+                2) Segundo elemento con <div class="css-property">postition: absolute; z-index: 2;</div>
             </div>
             <div class="css-element absolute-3">
-                3) Tercer elemento con <div class="css-property">postition: absolute;</div>
+                3) Tercer elemento con <div class="css-property">postition: absolute; z-index: 3;</div>
+            </div>
+        </div>
+        <p>
+            Los elementos hijos que definan su <span class="code">z-index</span> van a ser <strong>comparado con sus hermanos</strong> y no con elementos que estén fuera de su padre.
+        </p>
+        <div class="css-container-element outer">
+            <div class="css-container-element">
+                <p>
+                    Este elemento tiene <span class="css-property">position: relative; z-index: 0;</span>
+                </p>
+                <div class="css-element absolute-1">
+                    1) Primer elemento con <div class="css-property">postition: absolute; z-index: 1;</div>
+                </div>
+                <div class="css-element absolute-2">
+                    2) Segundo elemento con <div class="css-property">postition: absolute; z-index: 2;</div>
+                </div>
+                <div class="css-element absolute-3">
+                    3) Tercer elemento con <div class="css-property">postition: absolute; z-index: 3;</div>
+                </div>
+            </div>
+            <div class="css-element outer">
+                Este elemento está por fuera del contexto de apilamiento. Tiene <div class="css-property">z-index: 2;</div>.
             </div>
         </div>
     </section>
