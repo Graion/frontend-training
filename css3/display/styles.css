@@ -25,6 +25,6 @@
     display: none;
 }
 
-.display-none .hover-toggle:hover .hover-toggle-element{
+.display-none .hover-toggle:hover .hover-toggle-element {
     display: block;
 }

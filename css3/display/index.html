@@ -53,8 +53,10 @@
         <div class="alert">
             No se puede forzar <span class="code">width y height</span> de estos elementos.
         </div>
-        <div class="css-element">
-            Este elemento tiene <div class="css-property">display: inline;</div>
+        <div class="css-container-element">
+            <div class="css-element">
+                Este elemento tiene <div class="css-property">display: inline;</div>
+            </div>
         </div>
     </section>
     <section class="code-example display-inline-block">
@@ -65,20 +67,19 @@
         <p>
             Son muy útiles para definir columnas de un ancho fijo o grillas.
         </p>
-        <div class="css-element">
-            Este elemento tiene <div class="css-property">display: inline-block; width: 250px;</div>
-        </div>
-        <div class="css-element">
-            Este elemento tiene <div class="css-property">display: inline-block; width: 250px;</div>
+        <div class="css-container-element">
+            <div class="css-element">
+                Este elemento tiene <div class="css-property">display: inline-block; width: 250px;</div>
+            </div>
+            <div class="css-element">
+                Este elemento tiene <div class="css-property">display: inline-block; width: 250px;</div>
+            </div>
         </div>
     </section>
     <section class="code-example display-none">
         <h3 class="css-property">display: none;</h3>
         <p>
             Comunmente usada con JavaScript para hacer <strong>toggle (ocultar/mostrar) de elementos</strong> sin tener que eliminar y recrearlos (costoso para el DOM).
-        </p>
-        <p>
-            También es común combinarlo con el estado <span class="code">:hover</span> de un elemento padre.
         </p>
         <div class="css-container-element">
             <p>
@@ -99,6 +100,9 @@
                 })();
             </script>
         </div>
+        <p>
+            También es común combinarlo con el estado <span class="code">:hover</span> de un elemento padre.
+        </p>
         <div class="css-element hover-toggle">
             Este elemento tiene estado <div class="code">:hover</div>
             <div class="hover-toggle-element">
