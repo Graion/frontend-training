@@ -6,3 +6,23 @@
     height: 70px;
     text-align: center;
 }
+
+.box-size .css-element {
+    margin: 20px;
+    padding: 20px;
+    border: 20px solid grey;
+    width: 300px;
+    height: 100px;
+}
+
+.hover-to-show {
+    font-weight: bold;
+}
+
+.hover-to-show + .css-property {
+    display: none;
+}
+
+.hover-to-show:hover + .css-property {
+    display: inline;
+}
