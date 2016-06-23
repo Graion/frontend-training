@@ -1,6 +1,6 @@
 .z-index .css-container-element {
     position: relative;
-    height: 200px;
+    height: 250px;
 }
 
 .z-index .css-element {
@@ -17,15 +17,15 @@
 
 .z-index .css-element.absolute-2 {
     position: absolute;
-    bottom: 50px;
-    left: 50px;
+    bottom: 70px;
+    left: 70px;
     background-color: rgba(0, 255, 0, 0.6);
 }
 
 .z-index .css-element.absolute-3 {
     position: absolute;
-    bottom: 80px;
-    left: 80px;
+    bottom: 120px;
+    left: 120px;
     background-color: rgba(0, 0, 255, 0.6);
     color: white;
 }

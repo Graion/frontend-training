@@ -4,6 +4,8 @@
 
 body {
     margin: 0 20px;
+    overflow-x: hidden;
+    font-size: large;
 }
 
 h3.css-property {
@@ -21,13 +23,13 @@ h3.css-property {
 }
 
 .css-element {
-    background-color: #cfe4cf;
-    border: 1px solid #b1d1b1;
+    background-color: #d6ebd6;
+    border: 1px solid #7f9c7f;
     padding: 15px;
 }
 
 .css-container-element {
-    background-color: #8ba6fa;
+    background-color: #c3d1ff;
     border: 1px solid #5366e1;
     padding: 20px;
 }
