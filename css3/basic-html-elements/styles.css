@@ -9,3 +9,15 @@
 .align-right {
     text-align: right;
 }
+
+.forms form {
+    margin-top: 20px;
+}
+
+.forms input, .forms select {
+    display: block;
+}
+
+.forms input[type="radio"] {
+    display: inline-block;
+}
