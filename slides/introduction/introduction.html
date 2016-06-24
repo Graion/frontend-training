@@ -30,15 +30,47 @@
 
 		<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
 					<h1>Frontend Training</h1>
-					<h3>1. HTML & CSS</h3>
+					<h3>Introducción</h3>
 				</section>
 
+                <!-- Arquitecturas -->
+                <section>
+                    <section>
+                        <h3>Arquitectura Tradicional</h3>
+                        <p>
+                            Se construye el HTML en el servidor y se devuelve todo el documento con los datos requeridos. La lógica de negocios y de presentación <u>están acopladas</u>
+                        </p>
+                        <img src="img/TraditionalArchitecture.jpg" height="550px">
+                    </section>
+                    <section>
+                        <h3>Arquitectura Tradicional</h3>
+                        <p>
+                           Si se quiere, por ejemplo, agregar un dispositivo móvil se debe duplicar en otra Web App la lógica de negocios para que pueda ser interpretada por el nuevo dispositivo
+                        </p>
+                        <img src="img/TraditionalArchitectureProblem.jpg"  height="550px">
+                    </section>
+                    <section>
+                        <h3>Arquitectura API RESTful</h3>
+                        <p>
+                            
+                        </p>
+                        <img src="img/APIOneDevice.jpg"  height="550px">
+                    </section>
+                    <section>
+                        <h3>Arquitectura API RESTful</h3>
+                        <p>
+                            Escalable para multiples dispositivos
+                        </p>
+                        <img src="img/APIMultipleDevices.jpg"  height="550px">
+                    </section>
+                </section>
+
+                <!-- Introducción HTML, CSS, BROWSER y DOM -->
 				<section>
-					<h2>HTML (HyperText Markup Language)</h2>
+					<h3>HTML (HyperText Markup Language)</h3>
 					<p>
 						El HTML es un lenguaje de marcado (markup language) que sirve para darle estructura y contenido a una aplicación web.
                     </p>
@@ -49,7 +81,7 @@ Ejemplo P, IMG.
 				</section>
 
                 <section>
-                    <h2>CSS (Cascading Style Sheets)</h2>
+                    <h3>CSS (Cascading Style Sheets)</h3>
                     <p>
                         CSS permite separar el contenido de un documento de su presentación. 
                     </p>
@@ -60,7 +92,7 @@ Ejemplo P, IMG.
                 </section>
 
                 <section>
-                    <h2>BROWSER</h2>
+                    <h3>BROWSER</h3>
                     <p>
                         Tanto HTML como CSS son reproducidos por el navegador, por lo que no necesitamos levantar ningun tipo de servidor para poder trabajar con ellos.
                     </p>
@@ -68,55 +100,57 @@ Ejemplo P, IMG.
                 </section>
 
                 <section>
-                    <h2>DOM (Document Object Model)</h2>
+                    <h3>DOM (Document Object Model)</h3>
                     <p>
                         Provee una representación estructural del documento y define una forma de accederlo y modificar la estructura, contenido y estilos del documento, esencialmente conecta la página web con scripts o lenguajes de programación
                     </p>
                     <img src="img/Dom.jpg">
                 </section>
 
+                <!-- HTML -->
                 <section>
-					<h2>Partes de un Tag HTML</h2>
+					<h3>Partes de un Tag HTML</h3>
                     <img src="img/BasicTagStructure.png">
 				</section>
                 
                 <section>
-                    <h2>Escenario Básico</h2>
+                    <h3>Escenario Básico</h3>
                     <img src="img/BaseHTML.png">
                 </section>
 
+                <!-- HTML y CSS trabajando juntos -->
                 <section>
                     <section>
-                        <h2>Conexión HTML-CSS</h2>
+                        <h3>Conexión HTML-CSS</h3>
                     </section>
                     <section>
-                        <h2>Inline</h2>
+                        <h3>Inline</h3>
                         <p>Usando el atributo <strong><i>style</i></strong> dentro del tag. En este caso todo los estilos CSS son escritos dentro de este atributo. Esta forma de asignar estilos es considerada una <u>mala práctica</u></p>
                         <img src="img/InlineStyles.png">
                     </section>
                     <section>
-                        <h2>ID</h2>
+                        <h3>ID</h3>
                         <p>Se asocia el elemento con un <strong><i>id</i></strong> <u>único para ese tag</u>. Luego se definen los estilos que van a estar asociados a ese <strong><i>id</i></strong></p>
                         <img src="img/IdStyles.png">
                     </section>
                     <section>
-                        <h2>Class</h2>
+                        <h3>Class</h3>
                         <p>Es muy parecido al <strong><i>id</i></strong> solo que en este caso se útiliza el atributo <strong><i>class</i></strong>. Esta clase puede ser reutilizada las veces que se quiera en distintos elementos HTML</p>
                         <img src="img/ClassStyles.png">
                     </section>
                     <section>
-                        <h2>Tag <i>style</i></h2>
+                        <h3>Tag <i>style</i></h3>
                         <p>Dentro de este tag se podrá escribir código CSS que será interpretado por el navegador para darle estilos a los tags HTML que contengan las clases o ids especificados. La utilización de tags <strong><i>style</i></strong> es considerada una <u>mala práctica</u></p>
                         <img src="img/StyleTag.png">
                     </section>
                     <section>
-                        <h2>Tag <i>link</i></h2>
+                        <h3>Tag <i>link</i></h3>
                         <p>El tag <strong><i>link</i></strong> nos permitirá importar archivos css externos, pudiendo tener por separado el CSS del HTML. Este <u>buena práctica</u> reemplazaría al tag <strong><i>style</i></strong></p>
                         <img src="img/ImportCSS.png">
                         <img src="img/CSSFile.png">
                     </section>
                      <section>
-                        <h2>Multiples Classes</h2>
+                        <h3>Multiples Classes</h3>
                         <p>El atributo <strong><i>class</i></strong> puede contener multiples clases, procesando las propiedades de ambas</p>
                         <img src="img/MultipleClasses.png">
                     </section>

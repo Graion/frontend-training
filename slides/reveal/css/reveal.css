@@ -1329,3 +1329,11 @@ html:-moz-full-screen-ancestor {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+.reveal p {
+  font-size: 70%;
+}
+
+.reveal .slides > section, .reveal .slides > section > section {
+  padding-top: 0px;
+}
