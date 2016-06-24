@@ -13,7 +13,8 @@ h3.css-property {
 }
 
 .css-property {
-    background-color: beige;
+    background-color: #4c8c53;
+    color: #ffffff;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -23,8 +24,8 @@ h3.css-property {
 }
 
 .css-element {
-    background-color: #d6ebd6;
-    border: 1px solid #7f9c7f;
+    background-color: #f1ee8e;
+    border: 1px solid #999656;
     padding: 15px;
 }
 

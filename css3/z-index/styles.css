@@ -1,36 +1,32 @@
 .z-index .css-container-element {
     position: relative;
-    height: 250px;
+    height: 230px;
 }
 
 .z-index .css-element {
-    height: 50px;
     background-color: rgba(207, 228, 207, 0.8);
 }
 
 .z-index .css-element.absolute-1 {
     position: absolute;
-    bottom: 20px;
+    top: 90px;
     left: 20px;
-    background-color: rgba(255, 0, 0, 0.6);
+    background-color: #ff3232;
 }
 
 .z-index .css-element.absolute-2 {
     position: absolute;
-    bottom: 70px;
+    top: 135px;
     left: 70px;
-    background-color: rgba(0, 255, 0, 0.6);
+    background-color: #ffff32;
 }
 
 .z-index .css-element.absolute-3 {
     position: absolute;
-    bottom: 120px;
+    top: 180px;
     left: 120px;
-    background-color: rgba(0, 0, 255, 0.6);
+    background-color: #3232ff;
     color: white;
-}
-.z-index .css-element.absolute-3 .css-property {
-    color: black;
 }
 
 .z-index-integer .absolute-1 {
@@ -55,13 +51,19 @@
 
 .z-index-integer .css-element.outer {
     position: absolute;
-    background-color: #faa6ff;
+    background-color: #eeaaee;
     padding: 30px;
     height: inherit;
     width: 250px;
-    top: 130px;
+    top: 120px;
     left: 0;
     z-index: 2;
+}
+
+.best-practices .css-element {
+    width: 150px;
+    line-height: 2.5em;
+    text-align: center;
 }
 
 .best-practices .sidenav {
