@@ -68,7 +68,7 @@
         <ul>
             <li>
                 <header class="css-property title">Descendant</header>
-                <p>El combinador ' ' (espacio en blanco) <strong>selecciona nodos que son hijos (no necesariamente directos)</strong> del elemento seleccionado previamente.</p>
+                <p>El combinador <span class="code">' '</span> (espacio en blanco) <strong>selecciona nodos que son hijos (no necesariamente directos)</strong> del elemento seleccionado previamente.</p>
                 <div class="css-element">
                     <div class="colors">
                         <div class="red"></div>
@@ -98,7 +98,22 @@
     background-color: blue;
 }</code></pre>
             </li>
-            <li>Adjacent sibling</li>
+            <li>
+                <header class="css-property title">Adjacent sibling</header>
+                <p>El combinador <span class="code">'+'</span> <strong>selecciona el nodo que sigue inmediatamente</strong> al elemento seleccionado previamente.</p>
+                <div class="css-element">
+                    <h3 class="title-adjacent">Título</h3>
+                    <p>Este texto es hermano del título porque tienen el mismo padre.</p>
+                    <p>Este texto es hermano del título porque tienen el mismo padre.</p>
+                </div>
+                <pre><code class="html">&lt;h3 class=&quot;title-adjacent&quot;&gt;T&iacute;tulo&lt;/h3&gt;
+&lt;p&gt;Este texto es hermano del t&iacute;tulo porque tienen el mismo padre.&lt;/p&gt;
+&lt;p&gt;Este texto es hermano del t&iacute;tulo porque tienen el mismo padre.&lt;/p&gt;</code><code class="css">.title-adjacent + p {
+    background-color: red;
+    color: white;
+    padding: 10px;
+}</code></pre>
+            </li>
             <li>General sibling</li>
             <li>Child</li>
         </ul>
