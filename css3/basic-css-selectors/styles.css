@@ -1,9 +1,4 @@
-section > ul {
-    padding: 0;
-    list-style: none;
-}
-
-section > ul > li {
+article {
     margin-bottom: 20px;
 }
 

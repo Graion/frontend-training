@@ -14,69 +14,66 @@
     </header>
     <section>
         <h3>Basic Selectors</h3>
-        <ul>
-            <li>
-                <header class="css-property title">Type</header>
-                <div class="css-element">
-                    <a href="www.google.com">Google</a>
-                </div>
-                <pre><code class="html">&lt;a href=&quot;www.google.com&quot;&gt;Google&lt;/a&gt;</code><code class="css">a {
+        <article>
+            <header class="css-property title">Type</header>
+            <div class="css-element">
+                <a href="www.google.com">Google</a>
+            </div>
+            <pre><code class="html">&lt;a href=&quot;www.google.com&quot;&gt;Google&lt;/a&gt;</code><code class="css">a {
     color: red;
 }</code></pre>
-            </li>
-            <li>
-                <header class="css-property title">Class</header>
-                <div class="css-element">
-                    <p class="align-center">Este texto está centrado.</p>
-                </div>
-                <pre><code class="html">&lt;p class=&quot;align-center&quot;&gt;Este texto est&aacute; centrado.&lt;/p&gt;</code><code class="css">.align-center {
+        </article>
+        <article>
+            <header class="css-property title">Class</header>
+            <div class="css-element">
+                <p class="align-center">Este texto está centrado.</p>
+            </div>
+            <pre><code class="html">&lt;p class=&quot;align-center&quot;&gt;Este texto est&aacute; centrado.&lt;/p&gt;</code><code class="css">.align-center {
     text-align: center;
 }</code></pre>
-            </li>
-            <li>
-                <header class="css-property title">ID</header>
-                <div class="css-element">
-                    <div id="modal">Este es un modal.</div>
-                </div>
-                <pre><code class="html">&lt;div id=&quot;modal&quot;&gt;Este es un modal.&lt;/div&gt;</code><code class="css">#modal {
+        </article>
+        <article>
+            <header class="css-property title">ID</header>
+            <div class="css-element">
+                <div id="modal">Este es un modal.</div>
+            </div>
+            <pre><code class="html">&lt;div id=&quot;modal&quot;&gt;Este es un modal.&lt;/div&gt;</code><code class="css">#modal {
     background-color: red;
     color: white;
     padding: 40px;
 }</code></pre>
-            </li>
-            <li>
-                <header class="css-property title">Universal</header>
-                <p>Este tipo de selector es usado para seleccionar todos los elementos.</p>
-                <pre><code class="css">* {
+        </article>
+        <article>
+            <header class="css-property title">Universal</header>
+            <p>Este tipo de selector es usado para seleccionar todos los elementos.</p>
+            <pre><code class="css">* {
     margin: 0;
 }</code></pre>
-            </li>
-            <li>
-                <header class="css-property title">Attribute</header>
-                <div class="css-element">
-                    <input type="text">
-                </div>
-                <pre><code class="html">&lt;input type=&quot;text&quot;&gt;</code><code class="css">[type="text"] {
+        </article>
+        <article>
+            <header class="css-property title">Attribute</header>
+            <div class="css-element">
+                <input type="text">
+            </div>
+            <pre><code class="html">&lt;input type=&quot;text&quot;&gt;</code><code class="css">[type="text"] {
     background-color: blue;
     color: white;
 }</code></pre>
-            </li>
-        </ul>
+        </article>
     </section>
     <section>
         <h3>Combinators</h3>
-        <ul>
-            <li>
-                <header class="css-property title">Descendant</header>
-                <p>El combinador <span class="code">' '</span> (espacio en blanco) <strong>selecciona nodos que son hijos (no necesariamente directos)</strong> del elemento seleccionado previamente.</p>
-                <div class="css-element">
-                    <div class="colors">
-                        <div class="red"></div>
-                        <div class="green"></div>
-                        <div class="blue"></div>
-                    </div>
+        <article>
+            <header class="css-property title">Descendant</header>
+            <p>El combinador <span class="code">' '</span> (espacio en blanco) <strong>selecciona nodos que son hijos (no necesariamente directos)</strong> del elemento seleccionado previamente.</p>
+            <div class="css-element">
+                <div class="colors">
+                    <div class="red"></div>
+                    <div class="green"></div>
+                    <div class="blue"></div>
                 </div>
-                <pre><code class="html">&lt;div class=&quot;colors&quot;&gt;
+            </div>
+            <pre><code class="html">&lt;div class=&quot;colors&quot;&gt;
     &lt;div class=&quot;red&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;green&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;blue&quot;&gt;&lt;/div&gt;
@@ -97,59 +94,59 @@
 .colors .blue {
     background-color: blue;
 }</code></pre>
-            </li>
-            <li>
-                <header class="css-property title">Adjacent sibling</header>
-                <p>El combinador <span class="code">'+'</span> <strong>selecciona el nodo que sigue inmediatamente</strong> al elemento seleccionado previamente.</p>
-                <div class="css-element">
-                    <h3 class="title-adjacent">Título</h3>
-                    <p>Este texto es hermano del título porque tienen el mismo padre.</p>
-                    <p>Este texto es hermano del título porque tienen el mismo padre.</p>
-                </div>
-                <pre><code class="html">&lt;h3 class=&quot;title-adjacent&quot;&gt;T&iacute;tulo&lt;/h3&gt;
+        </article>
+        <article>
+            <header class="css-property title">Adjacent sibling</header>
+            <p>El combinador <span class="code">'+'</span> <strong>selecciona el nodo que sigue inmediatamente</strong> al elemento seleccionado previamente.</p>
+            <div class="css-element">
+                <h3 class="title-adjacent">Título</h3>
+                <p>Este texto es hermano del título porque tienen el mismo padre.</p>
+                <p>Este texto es hermano del título porque tienen el mismo padre.</p>
+            </div>
+            <pre><code class="html">&lt;h3 class=&quot;title-adjacent&quot;&gt;T&iacute;tulo&lt;/h3&gt;
 &lt;p&gt;Este texto es hermano del t&iacute;tulo porque tienen el mismo padre.&lt;/p&gt;
 &lt;p&gt;Este texto es hermano del t&iacute;tulo porque tienen el mismo padre.&lt;/p&gt;</code><code class="css">.title-adjacent + p {
     background-color: red;
     color: white;
     padding: 10px;
 }</code></pre>
-            </li>
-            <li>
-                <header class="css-property title">General sibling</header>
-                <p>El combinador <span class="code">'~'</span> <strong>selecciona los nodos que siguen inmediatamente</strong> al elemento seleccionado previamente.</p>
-                <div class="css-element">
-                    <h3 class="title-general">Título</h3>
-                    <p>Este texto es hermano del título porque tienen el mismo padre.</p>
-                    <p>Este texto es hermano del título porque tienen el mismo padre.</p>
-                </div>
-                <pre><code class="html">&lt;h3 class=&quot;title-general&quot;&gt;T&iacute;tulo&lt;/h3&gt;
+        </article>
+        <article>
+            <header class="css-property title">General sibling</header>
+            <p>El combinador <span class="code">'~'</span> <strong>selecciona los nodos que siguen inmediatamente</strong> al elemento seleccionado previamente.</p>
+            <div class="css-element">
+                <h3 class="title-general">Título</h3>
+                <p>Este texto es hermano del título porque tienen el mismo padre.</p>
+                <p>Este texto es hermano del título porque tienen el mismo padre.</p>
+            </div>
+            <pre><code class="html">&lt;h3 class=&quot;title-general&quot;&gt;T&iacute;tulo&lt;/h3&gt;
 &lt;p&gt;Este texto es hermano del t&iacute;tulo porque tienen el mismo padre.&lt;/p&gt;
 &lt;p&gt;Este texto es hermano del t&iacute;tulo porque tienen el mismo padre.&lt;/p&gt;</code><code class="css">.title-general ~ p {
     background-color: red;
     color: white;
     padding: 10px;
 }</code></pre>
-            </li>
-            <li>
-                <header class="css-property title">Child</header>
-                <p>El combinador <span class="code">'>'</span> <strong>selecciona los nodos hijos directos</strong> del elemento seleccionado previamente.</p>
-                <div class="css-element">
-                    <ul class="list-children">
-                        <li>
-                            Hijo directo
-                            <ul>
-                                <li>Hijo no directo</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Hijo directo
-                            <ul>
-                                <li>Hijo no directo</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <pre><code class="html">&lt;ul class=&quot;list-children&quot;&gt;
+        </article>
+        <article>
+            <header class="css-property title">Child</header>
+            <p>El combinador <span class="code">'>'</span> <strong>selecciona los nodos hijos directos</strong> del elemento seleccionado previamente.</p>
+            <div class="css-element">
+                <ul class="list-children">
+                    <li>
+                        Hijo directo
+                        <ul>
+                            <li>Hijo no directo</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Hijo directo
+                        <ul>
+                            <li>Hijo no directo</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <pre><code class="html">&lt;ul class=&quot;list-children&quot;&gt;
     &lt;li&gt;
         Hijo directo
         &lt;ul&gt;
@@ -170,33 +167,31 @@
 .list-children > li {
     background-color: blue;
 }</code></pre>
-            </li>
-        </ul>
+        </article>
     </section>
     <section>
         <h3>Pseudo-elements</h3>
-        <ul>
-            <li>
-                <header class="css-property title">::first-letter</header>
-                <p>Selecciona la primer letra de la primer línea de texto de un bloque.</p>
-                <div class="css-element">
-                    <p class="chapter-start">Había una vez...</p>
-                </div>
-                <pre><code class="html">&lt;p class=&quot;chapter-start&quot;&gt;Hab&iacute;a una vez...&lt;/p&gt;</code><code class="css">.chapter-start::first-letter {
+        <article>
+            <header class="css-property title">::first-letter</header>
+            <p>Selecciona la primer letra de la primer línea de texto de un bloque.</p>
+            <div class="css-element">
+                <p class="chapter-start">Había una vez...</p>
+            </div>
+            <pre><code class="html">&lt;p class=&quot;chapter-start&quot;&gt;Hab&iacute;a una vez...&lt;/p&gt;</code><code class="css">.chapter-start::first-letter {
     font-size: 3em;
     font-style: italic;
     font-weight: bold;
 }</code></pre>
-            </li>
-            <li>
-                <header class="css-property title">::before y ::after</header>
-                <p>Son comunmente usados para <strong>añadir contenido estético a un elemento</strong> mediante la property <span class="code">content</span>.</p>
-                <p><span class="code">::before</span> selecciona un elemento virtual que se encuentra antes del elemento seleccionado.</p>
-                <p><span class="code">::after</span> selecciona un elemento virtual que se encuentra luego del elemento seleccionado.</p>
-                <div class="css-element">
-                    <div class="before-after">Este es un elemento cuyos elementos virtuales ::before y ::after fueron dados estilo.</div>
-                </div>
-                <pre><code class="html">&lt;div class=&quot;before-after&quot;&gt;Este es un elemento cuyos elementos virtuales ::before y ::after fueron dados estilo.&lt;/div&gt;</code><code class="css">.before-after {
+        </article>
+        <article>
+            <header class="css-property title">::before y ::after</header>
+            <p>Son comunmente usados para <strong>añadir contenido estético a un elemento</strong> mediante la property <span class="code">content</span>.</p>
+            <p><span class="code">::before</span> selecciona un elemento virtual que se encuentra antes del elemento seleccionado.</p>
+            <p><span class="code">::after</span> selecciona un elemento virtual que se encuentra luego del elemento seleccionado.</p>
+            <div class="css-element">
+                <div class="before-after">Este es un elemento cuyos elementos virtuales ::before y ::after fueron dados estilo.</div>
+            </div>
+            <pre><code class="html">&lt;div class=&quot;before-after&quot;&gt;Este es un elemento cuyos elementos virtuales ::before y ::after fueron dados estilo.&lt;/div&gt;</code><code class="css">.before-after {
     background-color: green;
 }
 
@@ -209,10 +204,10 @@
     content: 'After';
     background-color: blue;
 }</code></pre>
-                <div class="css-element">
-                    <div class="popup">Este es un popup cuyo elemento virtual ::after tiene el estilo de una flecha.</div>
-                </div>
-                <pre><code class="html">&lt;div class=&quot;popup&quot;&gt;Este es un popup cuyo elemento virtual ::after tiene el estilo de una flecha.&lt;/div&gt;</code><code class="css">.popup {
+            <div class="css-element">
+                <div class="popup">Este es un popup cuyo elemento virtual ::after tiene el estilo de una flecha.</div>
+            </div>
+            <pre><code class="html">&lt;div class=&quot;popup&quot;&gt;Este es un popup cuyo elemento virtual ::after tiene el estilo de una flecha.&lt;/div&gt;</code><code class="css">.popup {
     position: relative;
     background-color: #007bff;
     border-radius: 4px;
@@ -231,19 +226,17 @@
     border-width: 15px 15px 0 15px;
     border-color: #007bff transparent transparent transparent;
 }</code></pre>
-            </li>
-        </ul>
+        </article>
     </section>
     <section>
         <h3>Pseudo-class</h3>
-        <ul>
-            <li>
-                <header class="css-property title">:hover</header>
-                <p>Selecciona el elemento en estado hover (con el mouse posicionado por encima).</p>
-                <div class="css-element">
-                    <div class="hover-over-me">Cambio el color de fondo cuando tengo el cursor encima.</div>
-                </div>
-                <pre><code class="html">&lt;div class=&quot;hover-over-me&quot;&gt;Cambio el color de fondo cuando tengo el cursor encima.&lt;/div&gt;</code><code class="css">.hover-over-me {
+        <article>
+            <header class="css-property title">:hover</header>
+            <p>Selecciona el elemento en estado hover (con el mouse posicionado por encima).</p>
+            <div class="css-element">
+                <div class="hover-over-me">Cambio el color de fondo cuando tengo el cursor encima.</div>
+            </div>
+            <pre><code class="html">&lt;div class=&quot;hover-over-me&quot;&gt;Cambio el color de fondo cuando tengo el cursor encima.&lt;/div&gt;</code><code class="css">.hover-over-me {
     border-radius: 4px;
     padding: 10px;
 }
@@ -251,25 +244,25 @@
 .hover-over-me:hover {
     background-color: red;
 }</code></pre>
-            </li>
-            <li>
-                <header class="css-property title">:first y :last</header>
-                <p>Selecciona el primer o último hijo.</p>
-                <div class="css-element">
-                    <div class="button-group">
-                        <div class="button">Primero</div>
-                        <div class="button">Otro</div>
-                        <div class="button">Otro</div>
-                        <div class="button">Otro</div>
-                        <div class="button">Último</div>
-                    </div>
+        </article>
+        <article>
+            <header class="css-property title">:first y :last</header>
+            <p>Selecciona el primer o último hijo.</p>
+            <div class="css-element">
+                <div class="button-group">
+                    <div class="button">Primero</div>
+                    <div class="button">Otro</div>
+                    <div class="button">Otro</div>
+                    <div class="button">Otro</div>
+                    <div class="button">Último</div>
                 </div>
-                <pre><code class="html">&lt;div class=&quot;button-group&quot;&gt;
-    &lt;div class=&quot;button&quot;&gt;Primero&lt;/div&gt;
-    &lt;div class=&quot;button&quot;&gt;Otro&lt;/div&gt;
-    &lt;div class=&quot;button&quot;&gt;Otro&lt;/div&gt;
-    &lt;div class=&quot;button&quot;&gt;Otro&lt;/div&gt;
-    &lt;div class=&quot;button&quot;&gt;&Uacute;ltimo&lt;/div&gt;
+            </div>
+            <pre><code class="html">&lt;div class=&quot;button-group&quot;&gt;
+&lt;div class=&quot;button&quot;&gt;Primero&lt;/div&gt;
+&lt;div class=&quot;button&quot;&gt;Otro&lt;/div&gt;
+&lt;div class=&quot;button&quot;&gt;Otro&lt;/div&gt;
+&lt;div class=&quot;button&quot;&gt;Otro&lt;/div&gt;
+&lt;div class=&quot;button&quot;&gt;&Uacute;ltimo&lt;/div&gt;
 &lt;/div&gt;</code><code class="css">.button-group .button {
     display: inline;
     background-color: #007bff;
@@ -291,15 +284,22 @@
 .button-group .button:first-child, .button-group .button:last-child {
     background-color: red;
 }</code></pre>
-            </li>
-        </ul>
+        </article>
     </section>
     <section>
         <h3>Specificity</h3>
+        <p>Se puede definir como el peso que tienen las combinaciones de selectores CSS.</p>
+        <p>Se calcula a partir de:</p>
         <ul>
-            <li>.class-1.class-2</li>
-            <li>el #a .b</li>
+            <li>Estilos inline</li>
+            <li>Identificadores</li>
+            <li>Clases, pseudo-clases, atributos</li>
+            <li>Elementos</li>
         </ul>
+        <div>
+            <img src="specificity-calculationbase.png" alt="Specificity">
+        </div>
+        <a href="http://specificity.keegan.st/">Specificity Calculator</a>
     </section>
     <script src="../highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
