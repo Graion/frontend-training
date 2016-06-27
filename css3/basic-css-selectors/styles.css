@@ -10,3 +10,9 @@ a {
 .align-center {
     text-align: center;
 }
+
+#modal {
+    background-color: red;
+    color: white;
+    padding: 40px;
+}
