@@ -114,7 +114,22 @@
     padding: 10px;
 }</code></pre>
             </li>
-            <li>General sibling</li>
+            <li>
+                <header class="css-property title">General sibling</header>
+                <p>El combinador <span class="code">'~'</span> <strong>selecciona los nodos que siguen inmediatamente</strong> al elemento seleccionado previamente.</p>
+                <div class="css-element">
+                    <h3 class="title-general">Título</h3>
+                    <p>Este texto es hermano del título porque tienen el mismo padre.</p>
+                    <p>Este texto es hermano del título porque tienen el mismo padre.</p>
+                </div>
+                <pre><code class="html">&lt;h3 class=&quot;title-general&quot;&gt;T&iacute;tulo&lt;/h3&gt;
+&lt;p&gt;Este texto es hermano del t&iacute;tulo porque tienen el mismo padre.&lt;/p&gt;
+&lt;p&gt;Este texto es hermano del t&iacute;tulo porque tienen el mismo padre.&lt;/p&gt;</code><code class="css">.title-general ~ p {
+    background-color: red;
+    color: white;
+    padding: 10px;
+}</code></pre>
+            </li>
             <li>Child</li>
         </ul>
     </section>

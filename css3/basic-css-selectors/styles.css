@@ -49,3 +49,9 @@ a {
     color: white;
     padding: 10px;
 }
+
+.title-general ~ p {
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
