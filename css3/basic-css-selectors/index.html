@@ -130,7 +130,47 @@
     padding: 10px;
 }</code></pre>
             </li>
-            <li>Child</li>
+            <li>
+                <header class="css-property title">Child</header>
+                <p>El combinador <span class="code">'>'</span> <strong>selecciona los nodos hijos directos</strong> del elemento seleccionado previamente.</p>
+                <div class="css-element">
+                    <ul class="list-children">
+                        <li>
+                            Hijo directo
+                            <ul>
+                                <li>Hijo no directo</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Hijo directo
+                            <ul>
+                                <li>Hijo no directo</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <pre><code class="html">&lt;ul class=&quot;list-children&quot;&gt;
+    &lt;li&gt;
+        Hijo directo
+        &lt;ul&gt;
+            &lt;li&gt;Hijo no directo&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        Hijo directo
+        &lt;ul&gt;
+            &lt;li&gt;Hijo no directo&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code><code class="css">.list-children li {
+    background-color: red;
+    color: white;
+}
+
+.list-children > li {
+    background-color: blue;
+}</code></pre>
+            </li>
         </ul>
     </section>
     <section>
