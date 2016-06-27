@@ -8,8 +8,17 @@ body {
     font-size: large;
 }
 
+pre {
+    margin: 10px 0;
+}
+
 h3.css-property {
     margin-left: -4px;
+}
+
+.css-property.title {
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
 .css-property {
