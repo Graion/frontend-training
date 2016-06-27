@@ -188,8 +188,50 @@
     font-weight: bold;
 }</code></pre>
             </li>
-            <li>::before</li>
-            <li>::after</li>
+            <li>
+                <header class="css-property title">::before y ::after</header>
+                <p>Son comunmente usados para <strong>añadir contenido estético a un elemento</strong> mediante la property <span class="code">content</span>.</p>
+                <p><span class="code">::before</span> selecciona un elemento virtual que se encuentra antes del elemento seleccionado.</p>
+                <p><span class="code">::after</span> selecciona un elemento virtual que se encuentra luego del elemento seleccionado.</p>
+                <div class="css-element">
+                    <div class="before-after">Este es un elemento cuyos elementos virtuales ::before y ::after fueron dados estilo.</div>
+                </div>
+                <pre><code class="html">&lt;div class=&quot;before-after&quot;&gt;Este es un elemento cuyos elementos virtuales ::before y ::after fueron dados estilo.&lt;/div&gt;</code><code class="css">.before-after {
+    background-color: green;
+}
+
+.before-after::before {
+    content: 'Before';
+    background-color: red;
+}
+
+.before-after::after {
+    content: 'After';
+    background-color: blue;
+}</code></pre>
+                <div class="css-element">
+                    <div class="popup">Este es un popup cuyo elemento virtual ::after tiene el estilo de una flecha.</div>
+                </div>
+                <pre><code class="html">&lt;div class=&quot;popup&quot;&gt;Este es un popup cuyo elemento virtual ::after tiene el estilo de una flecha.&lt;/div&gt;</code><code class="css">.popup {
+    position: relative;
+    background-color: #007bff;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.popup::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 15px;
+    color: white;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 0 15px;
+    border-color: #007bff transparent transparent transparent;
+}</code></pre>
+            </li>
         </ul>
     </section>
     <section>

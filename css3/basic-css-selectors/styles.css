@@ -70,3 +70,38 @@ a {
     font-style: italic;
     font-weight: bold;
 }
+
+.before-after {
+    background-color: green;
+}
+
+.before-after::before {
+    content: 'Before.';
+    background-color: red;
+}
+
+.before-after::after {
+    content: 'After.';
+    background-color: blue;
+    color: white;
+}
+
+.popup {
+    position: relative;
+    background-color: #007bff;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.popup::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 15px;
+    color: white;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 0 15px;
+    border-color: #007bff transparent transparent transparent;
+}
