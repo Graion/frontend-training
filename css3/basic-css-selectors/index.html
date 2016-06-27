@@ -66,10 +66,41 @@
     <section>
         <h3>Combinators</h3>
         <ul>
+            <li>
+                <header class="css-property title">Descendant</header>
+                <p>El combinador ' ' (espacio en blanco) <strong>selecciona nodos que son hijos (no necesariamente directos)</strong> del elemento seleccionado previamente.</p>
+                <div class="css-element">
+                    <div class="colors">
+                        <div class="red"></div>
+                        <div class="green"></div>
+                        <div class="blue"></div>
+                    </div>
+                </div>
+                <pre><code class="html">&lt;div class=&quot;colors&quot;&gt;
+    &lt;div class=&quot;red&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;green&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;blue&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code><code class="css">.colors div {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+.colors .red {
+    background-color: red;
+}
+
+.colors .green {
+    background-color: green;
+}
+
+.colors .blue {
+    background-color: blue;
+}</code></pre>
+            </li>
             <li>Adjacent sibling</li>
             <li>General sibling</li>
             <li>Child</li>
-            <li>Descendant</li>
         </ul>
     </section>
     <section>
@@ -90,6 +121,10 @@
     </section>
     <section>
         <h3>Specificity</h3>
+        <ul>
+            <li>.class-1.class-2</li>
+            <li>el #a .b</li>
+        </ul>
     </section>
     <script src="../highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>

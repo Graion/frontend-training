@@ -25,3 +25,21 @@ a {
     background-color: blue;
     color: white;
 }
+
+.colors div {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+.colors .red {
+    background-color: red;
+}
+
+.colors .green {
+    background-color: green;
+}
+
+.colors .blue {
+    background-color: blue;
+}
