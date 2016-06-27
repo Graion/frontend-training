@@ -20,3 +20,8 @@ a {
     color: white;
     padding: 40px;
 }
+
+[type="text"] {
+    background-color: blue;
+    color: white;
+}
