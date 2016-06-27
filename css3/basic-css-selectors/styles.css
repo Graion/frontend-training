@@ -64,3 +64,9 @@ a {
 .list-children > li {
     background-color: blue;
 }
+
+.chapter-start::first-letter {
+    font-size: 3em;
+    font-style: italic;
+    font-weight: bold;
+}

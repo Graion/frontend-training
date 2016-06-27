@@ -176,9 +176,20 @@
     <section>
         <h3>Pseudo-elements</h3>
         <ul>
+            <li>
+                <header class="css-property title">::first-letter</header>
+                <p>Selecciona la primer letra de la primer línea de texto de un bloque.</p>
+                <div class="css-element">
+                    <p class="chapter-start">Había una vez...</p>
+                </div>
+                <pre><code class="html">&lt;p class=&quot;chapter-start&quot;&gt;Hab&iacute;a una vez...&lt;/p&gt;</code><code class="css">.chapter-start::first-letter {
+    font-size: 3em;
+    font-style: italic;
+    font-weight: bold;
+}</code></pre>
+            </li>
             <li>::before</li>
             <li>::after</li>
-            <li>::first-letter</li>
         </ul>
     </section>
     <section>
