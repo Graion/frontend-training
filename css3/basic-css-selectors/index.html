@@ -239,7 +239,7 @@
         <ul>
             <li>
                 <header class="css-property title">:hover</header>
-                <p>Selecciona la primer letra de la primer línea de texto de un bloque.</p>
+                <p>Selecciona el elemento en estado hover (con el mouse posicionado por encima).</p>
                 <div class="css-element">
                     <div class="hover-over-me">Cambio el color de fondo cuando tengo el cursor encima.</div>
                 </div>
@@ -252,8 +252,46 @@
     background-color: red;
 }</code></pre>
             </li>
-            <li>:first</li>
-            <li>:last</li>
+            <li>
+                <header class="css-property title">:first y :last</header>
+                <p>Selecciona el primer o último hijo.</p>
+                <div class="css-element">
+                    <div class="button-group">
+                        <div class="button">Primero</div>
+                        <div class="button">Otro</div>
+                        <div class="button">Otro</div>
+                        <div class="button">Otro</div>
+                        <div class="button">Último</div>
+                    </div>
+                </div>
+                <pre><code class="html">&lt;div class=&quot;button-group&quot;&gt;
+    &lt;div class=&quot;button&quot;&gt;Primero&lt;/div&gt;
+    &lt;div class=&quot;button&quot;&gt;Otro&lt;/div&gt;
+    &lt;div class=&quot;button&quot;&gt;Otro&lt;/div&gt;
+    &lt;div class=&quot;button&quot;&gt;Otro&lt;/div&gt;
+    &lt;div class=&quot;button&quot;&gt;&Uacute;ltimo&lt;/div&gt;
+&lt;/div&gt;</code><code class="css">.button-group .button {
+    display: inline;
+    background-color: #007bff;
+    border: 1px solid;
+    padding: 10px;
+    width: 40px;
+}
+
+.button-group .button:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.button-group .button:last-child  {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.button-group .button:first-child, .button-group .button:last-child {
+    background-color: red;
+}</code></pre>
+            </li>
         </ul>
     </section>
     <section>
