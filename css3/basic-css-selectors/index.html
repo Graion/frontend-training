@@ -237,7 +237,21 @@
     <section>
         <h3>Pseudo-class</h3>
         <ul>
-            <li>:hover</li>
+            <li>
+                <header class="css-property title">:hover</header>
+                <p>Selecciona la primer letra de la primer línea de texto de un bloque.</p>
+                <div class="css-element">
+                    <div class="hover-over-me">Cambio el color de fondo cuando tengo el cursor encima.</div>
+                </div>
+                <pre><code class="html">&lt;div class=&quot;hover-over-me&quot;&gt;Cambio el color de fondo cuando tengo el cursor encima.&lt;/div&gt;</code><code class="css">.hover-over-me {
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.hover-over-me:hover {
+    background-color: red;
+}</code></pre>
+            </li>
             <li>:first</li>
             <li>:last</li>
         </ul>

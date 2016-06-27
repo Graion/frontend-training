@@ -12,6 +12,10 @@ pre {
     margin: 10px 0;
 }
 
+section {
+    margin-bottom: 100px;
+}
+
 h3.css-property {
     margin-left: -4px;
 }

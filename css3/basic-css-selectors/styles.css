@@ -105,3 +105,12 @@ a {
     border-width: 15px 15px 0 15px;
     border-color: #007bff transparent transparent transparent;
 }
+
+.hover-over-me {
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.hover-over-me:hover {
+    background-color: red;
+}
