@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Frontend Training</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/black.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+        <link rel="stylesheet" href="css/styles.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+                <section>
+                    <h2>Temas tratados la sesión pasada</h2>
+                </section>
+                <section>
+                    <h3>Introducción</h3>
+                    <ul>
+                        <li>Arquitectura Web Tradicional</li>
+                        <li>Arquitectura Web API RESTful</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>DOM</li>
+                        <li>Partes de un Tag HTML</li>
+                        <li>Formas de conectar HTML con CSS</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Elementos HTML Básicos</h3>
+                    <ul class="ul-font-size">
+                        <li>Headings 
+                            <ul>
+                                <li><span class="html-tag">&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;</span>
+                            </ul>
+                        </li>
+                        <li>Paragraphs &lt;p&gt;</span></li>
+                        <li>Forms <span class="html-tag">&lt;form&gt;</span>
+                            <ul>
+                                <li><span class="html-tag">&lt;input type="text"&gt</span></li>
+                                <li><span class="html-tag">&lt;input type="password"&gt;</span></li>
+                                <li><span class="html-tag">&lt;input type="radio"&gt;</span></li>
+                                <li><span class="html-tag">&lt;input type="file"&gt;</span></li>
+                                <li><span class="html-tag">&lt;select&gt;</span>
+                                    <ul>
+                                        <li><span class="html-tag">&lt;option&gt;</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        <li>Link <span class="html-tag">&lt;a&gt;</span></li>
+                        <li>List <span class="html-tag">&lt;ul&gt; </span>
+                            <ul>
+                                <li><span class="html-tag">&lt;li&gt;</span></li>
+                            </ul>
+                        </li>
+                        <li>Img <span class="html-tag">&lt;img&gt;</span></li>
+                        <li>Divisor <span class="html-tag">&lt;div&gt;</span></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Selectores CSS Básicos</h3>
+                    <section>
+                        <h4>Basic Selectors</h4>
+                        <ul>
+                            <li>Type: <span class="css-selector">a</span> {}</li>
+                            <li>Class: <span class="css-selector">.aling-center</span> {}</li>
+                            <li>ID: <span class="css-selector">#modal</span> {}</li>
+                            <li>Universal: <span class="css-selector">*</span> {}</li>
+                            <li>Attribute: <span class="css-selector">[type="text"]</span> {}</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Combinators</h4>
+                        <ul>
+                            <li>Descendant: <span class="css-selector">.colors</span> <span class="css-pseudo-class">li</span> {}</li>
+                            <li>Adjacent Siblings: <span class="css-selector">.title-adjacent</span> <span class="css-pseudo-class">+ p</span> {}</li>
+                            <li>General Siblings: <span class="css-selector">.title-general</span> <span class="css-pseudo-class">~ p</span> {}</li>
+                            <li>Child: <span class="css-selector">.list-children</span> <span class="css-pseudo-class">> li</span> {}</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Pseudo-Elements</h4>
+                        <ul>
+                            <li>First Letter: <span class="css-selector">.chapter-start</span><span class="css-pseudo-class">:first-letter</span> {}</li>
+                            <li>Before: <span class="css-selector">.class</span><span class="css-pseudo-class">:before</span> {}</li>
+                            <li>After: <span class="css-selector">.class</span><span class="css-pseudo-class">:after</span> {}</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Pseudo-Class</h4>
+                        <ul>
+                            <li>On Mouse Over: <span class="css-selector">.hover-over-me</span><span class="css-pseudo-class">:hover</span> {}</li>
+                            <li>First Child: <span class="css-selector">.button-group</span><span class="css-pseudo-class">:first-child</span> {}</li>
+                            <li>Last Child: <span class="css-selector">.button-group</span><span class="css-pseudo-class">:last-child</span> {}</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <h3>Propiedades CSS Básicas</h3>
+                    <ul>
+                        <li>Box-Model: <span class="css-property">margin, padding, border, content</span></li>
+                        <li>Display: <span class="css-property">block, inline, inline-block, none</span></li>
+                        <li>Position: <span class="css-property">static, relative, fixed, absolute</span></li>
+                        <li>Z-Index: <span class="css-property">z-index: &lt;entero&gt;</span> </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Specificity</h3>
+                    <img src="img/specificity-calculationbase.png" >
+                </section>
+                
+            </div>
+        </div>
+        
+		<script src="../reveal/lib/js/head.min.js"></script>
+		<script src="../reveal/js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+

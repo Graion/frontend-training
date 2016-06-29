@@ -1,0 +1,15 @@
+ .ul-font-size {
+    font-size: 30px !important;
+}
+.html-tag {
+    color: lightblue;
+}
+.css-selector {
+    color: lightgreen;
+}
+.css-pseudo-class {
+    color: yellow;
+}
+.css-property {
+    color: cyan;
+}
