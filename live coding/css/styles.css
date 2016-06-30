@@ -1,0 +1,53 @@
+.navbar {
+    background-color: rgba(0,0,0,0.60);
+    color: white;
+    height: 95px;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar .logo {
+    display: inline;
+    font-family: Grand Hotel, sans-serif;
+    font-size: 30px;
+    line-height: 95px;
+    margin-left: 64px;
+}
+
+.navbar .menu {
+    display: inline;
+    line-height: 95px;
+    margin: 0;
+    margin-right: 60px;
+    padding-left: 0;
+}
+
+.navbar .menu li {
+    display: inline;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.navbar .menu .active a {
+    border-bottom: 3px solid white;
+}
+
+.navbar .menu li:hover a {
+    color: grey;
+    border-color: grey;
+}
+
+.navbar .menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header {
+    width: 100%;
+}
