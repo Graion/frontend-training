@@ -1,2 +1,2 @@
 # frontend-training
-Code examples for frontend training.
+Training material for Frontend course.
