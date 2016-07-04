@@ -2,9 +2,19 @@
     color: white;
 }
 
+.toggle-color .css-element:before {
+    background-color: white;
+    color: black;
+    display: inline-block;
+    padding: 5px;
+}
+
 @media (max-width: 460px) {
     .toggle-color .css-element {
         background-color: red;
+    }
+    .toggle-color .css-element:before {
+        content: 'Mobile';
     }
 }
 
@@ -12,11 +22,17 @@
     .toggle-color  .css-element {
         background-color: green;
     }
+    .toggle-color .css-element:before {
+        content: 'Tablet';
+    }
 }
 
 @media (min-width: 769px) {
     .toggle-color .css-element {
         background-color: blue;
+    }
+    .toggle-color .css-element:before {
+        content: 'Desktop';
     }
 }
 
