@@ -1,20 +1,7 @@
-.css-container-element {
-    /* HACK: necessary to remove white-spaces */
-    font-size: 0;
+.css-container-element, .css-element {
     border: 0;
     margin: 0;
     padding: 20px 0;
-}
-
-/* In this case our default is desktop viewport */
-.css-element {
-    display: inline-block;
-    font-size: initial;
-    border: 0;
-    margin: 0;
-    padding: 20px 0;
-    vertical-align: top;
-    width: 25%;
 }
 
 .css-element .content {
@@ -24,9 +11,22 @@
     text-align: center;
 }
 
+.desktop-first .css-container-element {
+    /* HACK: necessary to remove white-spaces */
+    font-size: 0;
+}
+
+/* In this case our default is desktop viewport */
+.desktop-first .css-element {
+    display: inline-block;
+    font-size: initial;
+    vertical-align: top;
+    width: 25%;
+}
+
 /* Mobile breakpoint */
 @media (max-width: 460px) {
-    .css-element {
+    .desktop-first .css-element {
         width: 100%;
     }
 }
@@ -35,5 +35,26 @@
 @media (min-width: 461px) and (max-width: 768px) {
     .css-element {
         width: 50%;
+    }
+}
+
+/* Tablet and Desktop breakpoints */
+@media (min-width: 461px) {
+    .mobile-first .css-container-element {
+        /* HACK: necessary to remove white-spaces */
+        font-size: 0;
+    }
+
+    .mobile-first .css-element {
+        display: inline-block;
+        font-size: initial;
+        width: 50%;
+    }
+}
+
+/* Desktop breakpoint */
+@media (min-width: 769px) {
+    .mobile-first .css-element {
+        width: 25%;
     }
 }
