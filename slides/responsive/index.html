@@ -57,6 +57,15 @@
                 </section>
                 <section>
                     <section>
+                        <h2>Set the Viewport</h2>
+                        <p>
+                            Esta configuración le indica al browser que nuestro sitio es responsive, para que no haga zoom out de la página.
+                        </p>
+                        <pre><code data-html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+                        </code></pre>
+                    </section>
+                    <section>
                         <h2>CSS Media Queries</h2>
                         <pre><code data-html data-trim>
 <!-- CSS media query on a link element -->
@@ -88,7 +97,7 @@
                         <h2>Tablet Breakpoint</h2>
                         <img style="height: 300px" src="img/tablet-breakpoint.png" alt="Tablet Breakpoint">
                         <pre><code data-css data-trim>
-@media (max-width: 768px) {
+@media (min-width: 461px) and (max-width: 768px) {
     .navbar {
         /* Tablet style */
     }
@@ -99,7 +108,7 @@
                         <h2>Desktop Breakpoint</h2>
                         <img style="height: 300px" src="img/desktop-breakpoint.png" alt="Desktop Breakpoint">
                         <pre><code data-css data-trim>
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .navbar {
         /* Desktop style */
     }

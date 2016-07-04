@@ -1,0 +1,39 @@
+.css-container-element {
+    /* HACK: necessary to remove white-spaces */
+    font-size: 0;
+    border: 0;
+    margin: 0;
+    padding: 20px 0;
+}
+
+/* In this case our default is desktop viewport */
+.css-element {
+    display: inline-block;
+    font-size: initial;
+    border: 0;
+    margin: 0;
+    padding: 20px 0;
+    vertical-align: top;
+    width: 25%;
+}
+
+.css-element .content {
+    padding: 25px;
+    background: white;
+    border: 1px solid;
+    text-align: center;
+}
+
+/* Mobile breakpoint */
+@media (max-width: 460px) {
+    .css-element {
+        width: 100%;
+    }
+}
+
+/* Tablet breakpoint */
+@media (min-width: 461px) and (max-width: 768px) {
+    .css-element {
+        width: 50%;
+    }
+}
