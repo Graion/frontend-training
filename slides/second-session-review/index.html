@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Frontend Training</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/black.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+                <section>
+                    <h2>Temas tratados la sesión pasada</h2>
+                </section>
+                <section>
+                    <section>
+                        <h3>Componentes UI</h3>
+                        <h4>Navbar</h4>
+                        <p>Se útiliza como herramienta principal para navegar el sitio, normalmente esta visible y accesible todo el tiempo para el usuario</p>
+                        <h4>Sidebar</h4>
+                        <p>Se usa para poner acciones secundarias de navegación o manipulación de contenido, como filtros. Tambien puede ser usada a modo de Navbar.</p>
+                        <h4>Footer</h4>
+                        <p>Siempre se encuentra a lo último de la web, normalmente contiene información institucional del sitio y links a diversas secciones del mismo.</p>
+                        <h4>...</h4>
+                    </section>
+                    <section>
+                        <h4>Breadcrums</h4>
+                        <p>Sirve para marcar un historial de navegación, dandole contexto al usuario de en que parte de la aplicación se encuentra.</p>
+                        <h4>Modal</h4>
+                        <p>Es un panel que aparece por delante de todo el contenido, cortando el flujo de navegación, es un componente invasivo que debe ser usado con precaución</p>
+                        <h4>Tabs</h4>
+                        <p>Sirve para organizar el contenido fragmentandolo, facilitando la lectura del mismo y evitando la sobrecarga de información</p>
+                    </section>
+                </section>
+                <section>
+                    <h3>Live Coding</h3>
+                    <h4>Property line-height (Alto de línea)</h4>
+                    <p>Esta propiedad es muy usada a la hora de definir botones o items de listas, pudiendo configurar el alto de linea igual al alto del elemento padre, logrando que el texto siempre este posicionado en el centro del eje y</p>
+                    <h4>Definir valores margin/padding de Box Model</h4>
+                    <img src="img/boxmodel.png" >
+                </section>
+            </div>
+        </div>
+        
+		<script src="../reveal/lib/js/head.min.js"></script>
+		<script src="../reveal/js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+
