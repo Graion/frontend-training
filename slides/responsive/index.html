@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Frontend Training</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/black.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+        <link rel="stylesheet" href="css/styles.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+                <section>
+                    <h1>Responsive<br>Web Design</h1>
+                </section>
+                <section>
+                    <h2>Introducción</h2>
+                    <p>
+                        Es un enfoque de diseño web que apunta a crear sitios que provean  una <strong>visualización e interacción adaptada</strong> a una amplia cantidad de dispositivos.
+                    </p>
+                    <img src="img/responsive.jpg" alt="Responsive">
+                </section>
+                <section>
+                    <h2>Ejemplo de Responsive</h2>
+                    <img src="img/responsive_example.png" alt="Responsive Example">
+                </section>
+                <section>
+                    <h2>Box Model</h2>
+                    <img src="img/responsive-web-design-a-working-example.gif" alt="Responsive Example">
+                </section>
+                <section>
+                    <h2>Mobile First</h2>
+                    <img src="img/ds-mobilefirst-1.jpg" alt="Desktop to Mobile">
+                    <img src="img/ds-mobilefirst-2.jpg" alt="Mobile to Desktop">
+                </section>
+                <section>
+                    <section>
+                        <h2>CSS Media Queries</h2>
+                        <pre><code data-html data-trim>
+<!-- CSS media query on a link element -->
+<link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
+</code>
+<code data-html data-trim>
+<!-- CSS media query within a style sheet -->
+<style>
+@media (max-width: 600px) {
+    .facet_sidebar {
+        display: none;
+    }
+}
+</style>
+                      </code></pre>
+                    </section>
+                    <section>
+                        <h2>Mobile Breakpoint</h2>
+                        <img style="height: 300px" src="img/mobile-breakpoint.png" alt="Mobile Breakpoint">
+                        <pre><code data-css data-trim>
+@media (max-width: 460px) {
+    .navbar {
+        /* Mobile style */
+    }
+}
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h2>Tablet Breakpoint</h2>
+                        <img style="height: 300px" src="img/tablet-breakpoint.png" alt="Tablet Breakpoint">
+                        <pre><code data-css data-trim>
+@media (max-width: 768px) {
+    .navbar {
+        /* Tablet style */
+    }
+}
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h2>Desktop Breakpoint</h2>
+                        <img style="height: 300px" src="img/desktop-breakpoint.png" alt="Desktop Breakpoint">
+                        <pre><code data-css data-trim>
+@media (min-width: 768px) {
+    .navbar {
+        /* Desktop style */
+    }
+}
+                        </code></pre>
+                    </section>
+                </section>
+            </div>
+        </div>
+        
+		<script src="../reveal/lib/js/head.min.js"></script>
+		<script src="../reveal/js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+
