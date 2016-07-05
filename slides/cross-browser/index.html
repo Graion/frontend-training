@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Frontend Training</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/black.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+        <link rel="stylesheet" href="css/styles.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+                <section>
+                    <h1>Cross-Browser<br>Compatibility</h1>
+                </section>
+                <section>
+                    <h2>Media Queries Support</h2>
+                    <p>A fast & lightweight polyfill for min/max-width CSS3 Media Queries (for IE 6-8, and more).</p>
+                    <a href="https://github.com/scottjehl/Respond">Respond.js</a>
+                </section>
+                <section>
+                    <h2>Float for layouts in IE6-7</h2>
+                    <pre><code data-css>
+.column {
+    float: left;
+}
+                    </code></pre>
+                    <p>instead of</p>
+                    <pre><code data-css>
+.column {
+    display: inline-block;
+}
+                    </code></pre>
+                    <a href="http://www.ternstyle.us/blog/float-vs-inline-block">Float vs Inline Block</a>
+                    <a href="https://www.smashingmagazine.com/2009/10/the-mystery-of-css-float-property/">The Mistery of CSS Float property</a>
+                </section>
+                <section>
+                    <h2>CSS Reset / Normalizer</h2>
+                    <h3>Reset</h3>
+                    <p>Resetea los valores de display, margin, padding, font-size, etc.</p>
+                    <a href="http://cssreset.com/scripts/eric-meyer-reset-css/">Eric Meyer’s “Reset CSS” 2.0</a>
+                    <h3>Normalizer</h3>
+                    <p>Small CSS file that provides better cross-browser consistency in the default styling of HTML elements.</p>
+                    <a href="http://necolas.github.com/normalize.css/">Normalize.css</a>
+                </section>
+                <section>
+                    <h2>Vendor Prefixes</h2>
+                    <p>Los browsers tienen diferentes motores de renderizado de los sitios HTML.</p>
+                    <p>Algunos features de CSS3 son implementados de distinta forma y por eso les agregan a las properties un prefijo.</p>
+                    <pre><code>
+.prefixed-class {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background: -webkit-linear-gradient(red, green);
+    background: linear-gradient(red, green);
+}
+                    </code></pre>
+                    <a href="http://pleeease.io/play/">Autoprefixer</a>
+                    <a href="https://css-tricks.com/autoprefixer/">Autoprefixer Postprocessor</a>
+                </section>
+            </div>
+        </div>
+        
+		<script src="../reveal/lib/js/head.min.js"></script>
+		<script src="../reveal/js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+
