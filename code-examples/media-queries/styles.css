@@ -71,7 +71,7 @@
 
 /* Tablet breakpoint */
 @media (min-width: 461px) and (max-width: 768px) {
-    .grid-system .css-element {
+    .grid-system.desktop-first .css-element {
         width: 50%;
     }
 }
