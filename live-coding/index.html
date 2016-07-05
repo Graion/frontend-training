@@ -5,6 +5,7 @@
   <title>Live Coding</title>
   <meta name="description" content="Front End Training: Live Coding">
   <meta name="author" content="Planex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
   <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,500italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -16,7 +17,10 @@
 <body>
     <div class="navbar">
         <div class="logo">GoodFood</div>
-        <ul class="menu top-right">
+        <div class="menu-toggle">
+            <button type="button" class="js-menu-toggle-button">Menu</button>
+        </div>
+        <ul class="menu top-right js-menu">
             <li class="active">
                 <a href="#home">Home</a>
             </li>
@@ -38,5 +42,17 @@
         <img class="header" src="img/header.jpg">
     </div>
     <div class="footer">Footer</div>
+    <script type="text/javascript">
+      var menuToggleButton = document.getElementsByClassName('js-menu-toggle-button')[0];
+      var menu = document.getElementsByClassName('js-menu')[0];
+      menuToggleButton.onclick = function() {
+        var currentDisplay = menu.style.display || 'none';
+        if (currentDisplay === 'none') {
+          menu.style.display = 'block';
+        } else {
+          menu.style.display = 'none';
+        }
+      };
+    </script>
 </body>
 </html>

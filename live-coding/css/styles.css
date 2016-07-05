@@ -42,6 +42,56 @@
     text-decoration: none;
 }
 
+.navbar .menu-toggle {
+    display: none;
+    padding: 14px;
+    padding-top: 0;
+}
+
+.navbar .menu-toggle button {
+    color: white;
+    display: block;
+    text-align: center;
+    border: 1px solid white;
+    background: none;
+    padding: 10px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: initial;
+        min-height: 95px;
+    }
+
+    .navbar .menu-toggle {
+        display: block;
+    }
+
+    .navbar .logo {
+        display: block;
+        margin-left: 0;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .navbar .menu {
+        display: none;
+        line-height: initial;
+        margin-right: 0;
+        position: initial;
+    }
+
+    .navbar .menu li {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar .menu .active a {
+        border-bottom: 0;
+    }
+}
+
 .top-right {
     position: absolute;
     top: 0;
