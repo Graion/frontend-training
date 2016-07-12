@@ -1,3 +1,11 @@
+.answer .exercise-0 .green.square {
+    border: red solid 20px;
+    border-left-width: 40px;
+    border-right-width: 40px;
+    padding: 40px 20px;
+    margin: 10px;
+}
+
 .answer .exercise-1 .yellow.square {
     position: relative;
 }
@@ -20,4 +28,9 @@
 .answer .exercise-3 .square {
     display: inline-block;
     font-size: initial;
+}
+
+.answer .exercise-4 .yellow.square {
+    text-align: center;
+    line-height: 300px;
 }
