@@ -8,6 +8,15 @@ body {
     font-size: large;
 }
 
+.note {
+    font-style: italic;
+}
+
+.note:before {
+    content: 'Nota: ';
+    font-weight: bold;
+}
+
 .red {
     background-color: red;
 }
@@ -20,18 +29,24 @@ body {
     background-color: green;
 }
 
-.square {
-    text-align: center;
-}
-
 .large.square {
     width: 300px;
     height: 300px;
-    line-height: 300px;
 }
 
 .small.square {
     width: 100px;
     height: 100px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.large.centered.square {
+    line-height: 300px;
+}
+
+.small.centered.square {
     line-height: 100px;
 }
