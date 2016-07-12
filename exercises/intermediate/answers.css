@@ -1,0 +1,7 @@
+.answer .exercise-0 .square {
+    transition: .5s;
+}
+
+.answer .exercise-0 .square:hover {
+    background-color: red;
+}
