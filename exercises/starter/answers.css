@@ -1,0 +1,14 @@
+.answer .exercise-1 .yellow.square {
+    position: relative;
+}
+
+.answer .exercise-1 .red.square {
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.answer .exercise-2 .red.square {
+    margin: 0 auto;
+}
