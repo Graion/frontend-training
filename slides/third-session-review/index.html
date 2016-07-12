@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Frontend Training</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/black.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+                <section>
+                    <h2>Temas tratados la sesión pasada</h2>
+                </section>
+                <section>
+					<h3>Responsive Web Design</h3>
+					<ul>
+						<li>Mobile First</li>
+						<li>CSS Media Queries</li>
+						<li>Set the Viewport</li>
+						<li>Breakpoints</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Cross Browser Compatibility</h3>
+					<ul>
+						<li>Media Query Support for IE 6-8</li>
+						<li>Float vs Inline Block</li>
+						<li>CSS Reset / Normalizer</li>
+						<li>Vendor Prefixes</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Agenda de Hoy</h3>
+					<p>Aplicamos todos los conocimientos que adquirimos.</p>
+					<ul>
+						<li><a href="../../exercises/starter/index.html">Starter Exercises</a></li>
+						<li><a href="../../exercises/intermediate/index.html">Intermediate Exercises</a></li>
+						<li>Break :D</li>
+						<li><a href="../../live-coding/index.html">Develop Image Grid</a></li>
+					</ul>
+				</section>
+            </div>
+        </div>
+        
+		<script src="../reveal/lib/js/head.min.js"></script>
+		<script src="../reveal/js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+

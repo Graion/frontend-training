@@ -8,6 +8,11 @@ body {
     font-size: large;
 }
 
+header h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
 .note {
     font-style: italic;
 }
