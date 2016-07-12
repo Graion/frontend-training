@@ -19,3 +19,27 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
+.answer .exercise-3 .container {
+    position: relative;
+}
+
+.answer .exercise-3 .square {
+    position: absolute;
+}
+
+.answer .exercise-3 .red.square {
+    z-index: 3;
+}
+
+.answer .exercise-3 .green.square {
+    top: 100px;
+    left: 100px;
+    z-index: 2;
+}
+
+.answer .exercise-3 .blue.square {
+    top: 200px;
+    left: 200px;
+    z-index: 1;
+}

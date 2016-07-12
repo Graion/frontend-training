@@ -29,9 +29,18 @@ body {
     background-color: #77DD77;
 }
 
+.blue {
+    background-color: #AEC6CF;
+}
+
 .large.square {
     width: 300px;
     height: 300px;
+}
+
+.medium.square {
+    width: 200px;
+    height: 200px;
 }
 
 .small.square {
@@ -45,6 +54,10 @@ body {
 
 .large.centered.square {
     line-height: 300px;
+}
+
+.medium.centered.square {
+    line-height: 200px;
 }
 
 .small.centered.square {

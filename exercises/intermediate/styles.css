@@ -7,6 +7,11 @@
     font-size: initial;
 }
 
+img {
+    width: 200px;
+    border: black solid 4px;
+}
+
 /* Cambiar el color del cuadrado verde a rojo al posicionar el mouse por encima */
 .exercise-0 {}
 
@@ -15,3 +20,6 @@
 
 /* Redondear en 10px las puntas exteriores del primer y último cuadrado */
 .exercise-2 {}
+
+/* Dar estilo a los cuadrados para que queden ubicados como en la imagen */
+.exercise-3 {}
