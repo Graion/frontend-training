@@ -33,13 +33,29 @@
 }
 
 .answer .exercise-3 .green.square {
-    top: 100px;
-    left: 100px;
+    top: 50px;
+    left: 50px;
     z-index: 2;
 }
 
 .answer .exercise-3 .blue.square {
-    top: 200px;
-    left: 200px;
+    top: 100px;
+    left: 100px;
     z-index: 1;
+}
+
+.answer .exercise-4 .square {
+    background-color: red;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .answer .exercise-4 .square {
+        background-color: green;
+    }
+}
+
+@media (max-width: 767px) {
+    .answer .exercise-4 .square {
+        background-color: blue;
+    }
 }

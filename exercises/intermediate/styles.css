@@ -1,5 +1,7 @@
 /* Escribir las soluciones aquí */
 .container {
+    display: inline-block;
+    height: 200px;
     font-size: 0;
 }
 .container .square {
@@ -8,8 +10,9 @@
 }
 
 img {
-    width: 200px;
     border: black solid 4px;
+    display: inline-block;
+    width: 200px;
 }
 
 /* Cambiar el color del cuadrado verde a rojo al posicionar el mouse por encima */
@@ -23,3 +26,6 @@ img {
 
 /* Dar estilo a los cuadrados para que queden ubicados como en la imagen */
 .exercise-3 {}
+
+/* Dar estilo al cuadrado amarillo de acuerdo al viewport */
+.exercise-4 {}
