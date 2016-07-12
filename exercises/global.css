@@ -16,12 +16,22 @@ body {
     background-color: yellow;
 }
 
+.green {
+    background-color: green;
+}
+
+.square {
+    text-align: center;
+}
+
 .large.square {
     width: 300px;
     height: 300px;
+    line-height: 300px;
 }
 
 .small.square {
     width: 100px;
     height: 100px;
+    line-height: 100px;
 }

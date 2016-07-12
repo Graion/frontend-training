@@ -12,3 +12,12 @@
 .answer .exercise-2 .red.square {
     margin: 0 auto;
 }
+
+.answer .exercise-3 .container {
+    font-size: 0;
+}
+
+.answer .exercise-3 .square {
+    display: inline-block;
+    font-size: initial;
+}
