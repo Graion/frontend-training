@@ -18,15 +18,15 @@ body {
 }
 
 .red {
-    background-color: red;
+    background-color: #FF6961;
 }
 
 .yellow {
-    background-color: yellow;
+    background-color: #FDFD96;
 }
 
 .green {
-    background-color: green;
+    background-color: #77DD77;
 }
 
 .large.square {
