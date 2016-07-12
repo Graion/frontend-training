@@ -1,4 +1,17 @@
 /* Escribir las soluciones aquí */
+.container {
+    font-size: 0;
+}
+.container .square {
+    display: inline-block;
+    font-size: initial;
+}
 
 /* Cambiar el color del cuadrado verde a rojo al posicionar el mouse por encima */
 .exercise-0 {}
+
+/* Ocultar el cuadrado rojo al posicionar el mouse por encima del cuadrado amarillo */
+.exercise-1 {}
+
+/* Redondear en 10px las puntas exteriores del primer y último cuadrado */
+.exercise-2 {}
