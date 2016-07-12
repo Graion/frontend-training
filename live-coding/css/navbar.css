@@ -1,7 +1,8 @@
 .navbar {
-    background-color: rgba(0,0,0,0.60);
+    background-color: rgba(43,41,44,0.55);
     color: white;
     height: 95px;
+    font-weight: 500;
     position: fixed;
     width: 100%;
 }
@@ -28,24 +29,27 @@
     text-transform: uppercase;
 }
 
-.navbar .menu .active a {
-    border-bottom: 3px solid white;
+.navbar .menu li a {
+    border-bottom: 3px solid transparent;
+    color: white;
+    padding-bottom: 6px;
+    text-decoration: none;
+    transition: color .25s, border-color .25s;
+}
+
+.navbar .menu .active a,
+.navbar .menu li:hover a {
+    border-color: white;
 }
 
 .navbar .menu li:hover a {
-    color: grey;
-    border-color: grey;
-}
-
-.navbar .menu li a {
-    color: white;
-    text-decoration: none;
+    color: #CFCFCF;
+    border-color: #CFCFCF;
 }
 
 .navbar .menu-toggle {
     display: none;
     padding: 14px;
-    padding-top: 0;
 }
 
 .navbar .menu-toggle button {
@@ -54,6 +58,7 @@
     text-align: center;
     border: 1px solid white;
     background: none;
+    outline: none;
     padding: 10px;
     width: 100%;
 }
@@ -79,6 +84,7 @@
         display: none;
         line-height: initial;
         margin-right: 0;
+        margin-bottom: 14px;
         position: initial;
     }
 
