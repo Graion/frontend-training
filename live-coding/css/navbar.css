@@ -88,6 +88,10 @@
         position: initial;
     }
 
+    .navbar .menu.visible {
+        display: block;
+    }
+
     .navbar .menu li {
         display: block;
         text-align: center;
