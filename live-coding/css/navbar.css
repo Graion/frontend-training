@@ -81,20 +81,26 @@
     }
 
     .navbar .menu {
-        display: none;
+        display: block;
         line-height: initial;
         margin-right: 0;
-        margin-bottom: 14px;
+        max-height: 0;
+        overflow: hidden;
         position: initial;
+        transition: max-height 1s ease-out;
     }
 
     .navbar .menu.visible {
-        display: block;
+        max-height: 600px;
     }
 
     .navbar .menu li {
         display: block;
         text-align: center;
+    }
+
+    .navbar .menu li:last-child {
+        margin-bottom: 14px;
     }
 
     .navbar .menu .active a {
