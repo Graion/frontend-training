@@ -1,6 +1,5 @@
 .header {
-    background-image: url('../img/header.jpg');
-    background-position: center;
+    background: url('../img/header.jpg') center;
     background-size: cover;
     position: relative;
     width: 100%;

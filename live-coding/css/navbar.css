@@ -10,7 +10,7 @@
 .navbar .logo {
     display: inline;
     font-family: Grand Hotel, sans-serif;
-    font-size: 30px;
+    font-size: 2em;
     line-height: 95px;
     margin-left: 64px;
 }
@@ -18,21 +18,20 @@
 .navbar .menu {
     display: inline;
     line-height: 95px;
-    margin: 0;
-    margin-right: 60px;
+    margin: 0 60px 0 0;
     padding-left: 0;
 }
 
 .navbar .menu li {
     display: inline;
-    padding: 10px;
+    padding: .7em;
     text-transform: uppercase;
 }
 
 .navbar .menu li a {
-    border-bottom: 3px solid transparent;
+    border-bottom: .15em solid transparent;
     color: white;
-    padding-bottom: 6px;
+    padding-bottom: .3em;
     text-decoration: none;
     transition: color .25s, border-color .25s;
 }
@@ -49,7 +48,7 @@
 
 .navbar .menu-toggle {
     display: none;
-    padding: 14px;
+    padding: 1em;
 }
 
 .navbar .menu-toggle button {
@@ -100,7 +99,7 @@
     }
 
     .navbar .menu li:last-child {
-        margin-bottom: 14px;
+        margin-bottom: 1em;
     }
 
     .navbar .menu .active a {

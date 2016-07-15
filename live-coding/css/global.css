@@ -13,33 +13,33 @@
 }
 
 .row {
-	/* Hack to hide white spaces between inline-block elements */
-	font-size: 0;
-	margin: 3rem;
+    /* Hack to hide white spaces between inline-block elements */
+    font-size: 0;
+    margin: 3rem;
 }
 
 .column-25 {
-	display: inline-block;
-	font-size: initial;
-	width: 25%;
+    display: inline-block;
+    font-size: initial;
+    width: 25%;
 }
 
 @media (max-width: 1200px) {
-	.row {
-		margin: 2rem;
-	}
+    .row {
+        margin: 2rem;
+    }
 
-	.column-25 {
-		width: 50%;
-	}
+    .column-25 {
+        width: 50%;
+    }
 }
 
 @media (max-width: 767px) {
-	.row {
-		margin: 1rem;
-	}
+    .row {
+        margin: 1rem;
+    }
 
-	.column-25 {
-		width: 100%;
-	}
+    .column-25 {
+        width: 100%;
+    }
 }
