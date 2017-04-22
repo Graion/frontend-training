@@ -15,7 +15,10 @@
 
 ## Slides
 
-- [First Session Agenda]({{ '/slides/first-session-agenda' | prepend: site.baseurl }})
+- [First Session]({{ '/slides/first-session-agenda' | prepend: site.baseurl }})
+- [Second Session]({{ '/slides/first-session-review' | prepend: site.baseurl }})
+- [Third Session]({{ '/slides/second-session-review' | prepend: site.baseurl }})
+- [Fourth Session]({{ '/slides/third-session-review' | prepend: site.baseurl }})
 
 ## Live Coding
 
